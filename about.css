@@ -1,0 +1,54 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFDEE9;
+    background-image: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(17,235,237,0.28343837535014005) 0%, rgba(255,0,202,0.3254551820728291) 100%);
+    
+    
+    
+}
+div{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(167,212,213,1) 0%, rgba(255,0,202,0.3254551820728291) 100%);
+    z-index: 20;
+    border-radius: 10px;
+}
+
+
+h1{
+    text-decoration: underline;
+}
+.heading{
+    height: 800px;
+    width: 1000px;
+
+    /* background-color: aqua; */
+    border: 2px solid black;
+    margin:20px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin: 20px;
+    border-radius: 10px;   
+}
+
+.div{
+    height: 20px;
+    width: 100px;
+    background-image: url("C:\Users\nagpa\OneDrive\Desktop\html\image 8.jpg");
+    background-size: cover;
+}
+
+#head{
+    text-align: center;
+    font-size: 20px;
+    animation-duration: 2s;
+    
+}
+#paragraph{
+    font-size: 30px;
+
+    margin: 20px;
+}
