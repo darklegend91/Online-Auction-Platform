@@ -1,54 +1,158 @@
-body{
+* {
+    padding: 0;
+    margin: 0;
+    font-family: inconsolata;
+    flex-wrap: wrap;
+}
+.nav1{
+    background-color: black;
+    color: white;
+    height: 70px;
     display: flex;
+    flex-direction: row;
+    justify-content:center;
     align-items: center;
-    justify-content: center;
-    background-color: #FFDEE9;
-    background-image: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(17,235,237,0.28343837535014005) 0%, rgba(255,0,202,0.3254551820728291) 100%);
-    
-    
-    
-}
-div{
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(167,212,213,1) 0%, rgba(255,0,202,0.3254551820728291) 100%);
-    z-index: 20;
-    border-radius: 10px;
 }
 
-
-h1{
-    text-decoration: underline;
+.nav1 li {
+    display: inline;
+    margin-right: 20px;
+    padding-right: 10px;
 }
-.heading{
-    height: 800px;
-    width: 1000px;
 
-    /* background-color: aqua; */
-    border: 2px solid black;
-    margin:20px;
+.nav1 a {
+    text-decoration: none;
+    color: white;
+}
+.nav1 a:hover{
+    font-size: 27px;
+}
+.nav2{
+    height: 135px;
+    justify-content: space-between;
     display: flex;
-    align-content: center;
-    justify-content: center;
-    margin: 20px;
-    border-radius: 10px;   
+    flex-direction: row;
 }
 
-.div{
-    height: 20px;
-    width: 100px;
-    background-image: url("C:\Users\nagpa\OneDrive\Desktop\html\image 8.jpg");
-    background-size: cover;
+.nav2 img{
+    padding-left: 10px;
+    padding-top: 25px;
+} 
+.flex0{
+    display: flex;
+    flex-direction: row;
+    font-size: 100%;
 }
-
-#head{
-    text-align: center;
+#srhbutton{
+    margin-top: 42px;
+    border-radius: 50px;
+    height: 45px;
+    width: 130px;
+    margin-left: -140px;
+    border: none;
+    background-color: rgb(219, 55, 101);
+    color:white;
     font-size: 20px;
-    animation-duration: 2s;
-    
 }
-#paragraph{
-    font-size: 30px;
 
-    margin: 20px;
+#srhbutton:hover, .submit:hover{
+    background-color: rgb(157, 214, 157);
+}
+.search{
+    margin-top: 35px;
+    margin-left: 180px;
+    border-radius: 50px;
+    height: 60px;
+    width: 600px; 
+    padding-left: 10px;
+    font-size: 20px;
+    background-color: #F3F6FD;
+    border: none;
+}
+main{
+    background-color: #F3F6FD;
+}
+
+
+
+.us{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left: 140px;
+    width: 80%;
+}
+.us1{
+    width: 250px;
+    padding: 50px 0;
+}
+.us2{
+    font-weight: bold;
+    font-size: 21px;
+}
+.fa-shopping-cart, .fa-lock, .fa-bell, .fa-headphones{
+    color: green;
+    font-size: 50px;
+}
+.us3{
+    display: flex;
+    flex-direction: row;
+}
+
+.footer1{
+    background-color: rgb(49, 50, 54);
+    color: white;
+    display: flex;
+    justify-content: space-around;
+}
+
+.foot1, .foot2{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#email{
+    border-radius: 20px;
+    width: 200px;
+    height: 32px;
+    padding-left: 5px;
+}
+
+.submit{
+    background-color: rgb(219, 55, 101);
+    padding: 5px 5px 5px 5px;
+    width: 80px;
+    border-radius: 50px;
+}
+
+.footer2{
+    background-color: rgb(49,50,54);
+    color: white;
+}
+
+.foot3{
+    padding-left: 20px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+.foot3 li {
+    display: inline;
+    margin-right: 20px;
+    padding-left: 20px;
+}
+
+.foot3 a {
+    text-decoration: none;
+    color: white;
+}
+
+#copy{
+    padding-left: 300px;
+}
+.fa-facebook,.fa-instagram,.fa-twitter,.fa-linkedin,.fa-github{
+    padding: 8px 8px;
+    text-decoration: none;
+    color:white;
+    height: 20px;
 }
