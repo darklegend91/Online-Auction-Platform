@@ -82,22 +82,9 @@ main{
     background-color: #F3F6FD;
     border: none;
 }
-.register_button{
-    width: 230px;
-    top: 87%;
-    border-radius: 50px;
-    border: none;
-    font-size: 25px;
-    left: 1%;
-    height: 60px;
-    position: absolute;
-    background-color: rgb(219, 55, 101);
-    color: white;
-    cursor: pointer;
-}
 
 /* code for alert that are overflown */
-.cook1{
+/* .cook1{
     width: 50%;
     height: 50%;
     border:1px solid black;
@@ -107,9 +94,9 @@ main{
     position: fixed;
     top: 20%;
     left: 25%;
-    /* z-index: 5; */
+    z-index: 5;
     margin-left: 20PX;
-    /* background-color: #F3F6FD; */
+    background-color: #F3F6FD;
     background-color: white;
 }
 .accept{
@@ -126,7 +113,7 @@ main{
     font-size: 15px;
 }
 
-  
+
 .closebtn{
     margin-left: 15px;
     color: white;
@@ -137,11 +124,24 @@ main{
     cursor: pointer;
     transition: 0.3s;
 }
-  
+
 .closebtn:hover{
     color: black;
-}
+} */
 /*  */
+.register_button{
+    width: 230px;
+    top: 67%;
+    border-radius: 50px;
+    border: none;
+    font-size: 25px;
+    left: 1%;
+    height: 61px;
+    position: absolute;
+    background-color: rgb(219, 55, 101);
+    color: white;
+    cursor: pointer;
+}
 .image{
     display:flex;
     flex-direction: column;
@@ -151,6 +151,7 @@ main{
 .image2{
     display: flex;
     flex-direction: row;
+    position: relative;
 }
 
 
