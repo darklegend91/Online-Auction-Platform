@@ -4,6 +4,13 @@
     padding: 0;
     font-family: inconsolata;
 }
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(219, 55, 101);
+}
 .nav1{
     background-color: black;
     color: white;
