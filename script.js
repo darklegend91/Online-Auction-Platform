@@ -7,9 +7,11 @@ function next_page(){
 }
 
 function check_Password() {
-    let a = document.getElementById("password1").value;
-    let b = document.getElementById("confirm_password1").value;
-    if (a == b) {
+    let a = document.getElementById("password").value;
+    let b = document.getElementById("confirm_password").value;
+    if ((a=="") || (b=="")){
+        alert("Please Fill out all the details");
+    } else if (a == b) {
         window.location.href = "3_main.html";
     } else {
         alert("Password and confirm password does not match.");
