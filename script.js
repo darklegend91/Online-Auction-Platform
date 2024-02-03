@@ -17,3 +17,6 @@ function check_Password() {
         alert("Password and confirm password does not match.");
     }
 }
+function form_page(){
+    window.location.href="2_form.html";
+}
