@@ -1,11 +1,3 @@
-function next_page(){
-    let a = prompt("Place your Bid");
-    let b = confirm("The Amount entered is " + a + "\nDo you wanna Continue?");
-    if (b){
-        window.location.href="../pages/confirmation.html";
-    }
-}
-
 function check_Password() {
     let a = document.getElementById("password").value;
     let b = document.getElementById("confirm_password").value;
