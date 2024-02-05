@@ -137,8 +137,8 @@ main{
 } */
 /*  */
 .register_button{
-    width: 230px;
-    top: 67%;
+    width: 250px;
+    top: 59%;
     border-radius: 50px;
     border: none;
     font-size: 25px;
@@ -151,6 +151,8 @@ main{
 }
 .image{
     display:flex;
+    width: 40%;
+    /* background-color: yellow; */
     flex-direction: column;
     align-items: end;
 
@@ -160,13 +162,17 @@ main{
     flex-direction: row;
     position: relative;
 }
+.image3{
+    /* height: 70%; */
+    width: 60%;
+}
 
 
 .works_head{
     text-align: center;
     font-size: 40px;
     font-weight: 1000;
-    padding-top: 50px;
+    /* padding-top: 50px; */
     padding-bottom: 30px;
 }
 .work_line{
