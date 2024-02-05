@@ -273,4 +273,9 @@ div.borderXwidth a:hover:before, div.borderXwidth a:hover:after
     padding-left: 335px;
 }
 
-
+.fa-facebook,.fa-instagram,.fa-twitter,.fa-linkedin,.fa-github{
+    padding: 8px 8px;
+    text-decoration: none;
+    color:white;
+    height: 20px;
+}
