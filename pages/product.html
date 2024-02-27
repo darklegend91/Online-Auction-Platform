@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OnlineAuction - Product page</title>
+    <link rel="stylesheet" href="../styles/product.css">
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header class="poppins-light">
+        <div class="nav">
+            <div style="padding-top: 8px;">
+                <img src="../images/111.png" alt="">
+            </div>
+            <div class="nav1">
+                <div><a href="../index.html">Home</a></div>
+                <div><a href="../pages/about.html">About us</a></div>
+                <div><a href="#">Browse product</a></div>
+                <div><a href="#">Gallery</a></div>
+                <div><a href="#">Blog</a></div>
+                <div><a href="#">Contact</a></div>
+            </div>
+            <div class="nav2">
+                <div>
+                    <span class="material-symbols-outlined search" onclick="openSearch()">search</span>
+                </div>
+                <!-- code for fullscreen search -->
+                <div id="myOverlay" class="overlay">
+                    <span class="closebtn" onclick="closeSearch()" title="Close Overlay">x</span>
+                    <div class="overlay-content">
+                        <div><input type="text" placeholder="Search.." name="search"></div>
+                        <div><button type="submit"><i class="fa fa-search"></i></button></div>
+                    </div>
+                </div>
+                <!-- end -->
+                <div>
+                    <button>Account</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="main">
+        <div class="fix">
+            <p>Categories</p>
+            <div>
+                <div><a href="#">Electronics</a></div>
+                <div><a href="#">Electronics</a></div>
+                <div><a href="#">Electronics</a></div>
+                <div><a href="#">Electronics</a></div>
+            </div>
+            <br>
+            <p>New Arrivals</p>
+            <div>
+                <div>Last 30 days</div>
+                <div>Last 90 days</div>
+            </div>
+        </div>
+        <div class="scroll">
+            <div class="car">
+                <div class="head">
+                    <div class="head-a">
+                        <div><img src="../images/car.png"></div> &ensp;
+                        <div class="head-b">Vehicles</div>
+                    </div>
+                    <div>
+                        <button>View all</button>
+                    </div>
+                </div>
+                <div class="auction">
+
+                    <div class="a1">
+                        <div><img
+                                src="https://www.thehousedesigners.com/images/plans/01/URD/bulk/6583/the-destination-front-rendering_m.webp">
+                        </div>
+                        <div class="a1_head">Mustang</div>
+                        <div class="a1_description" id="desci">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                            Accusantium, blanditiis.</div>
+                        <div class="a1_timer" id="timer">
+                            <p id="demo1"></p>
+                        </div>
+                        <div class="a1_bid" id="first">
+                            <div>Current bid: ****</div>
+                            <div><button onclick="change()">Place your Bid</button></div>
+                        </div>
+                        <div id="item" style="display: none;">
+                            <div class="a1_bid">Highest Bid: *****</div>
+                            <div class="user_bid">Place your Bid: <input type="text"></div>
+                            <div><button type="su" class="a1_final">Bid Now</button></div>
+                        </div>
+                    </div>
+                    <div class="a1">
+                        <div><img
+                                src="https://www.thehousedesigners.com/images/plans/01/URD/bulk/6583/the-destination-front-rendering_m.webp">
+                        </div>
+                        <div class="a1_head">Mustang</div>
+                        <div class="a1_description" id="desci">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                            Accusantium, blanditiis.</div>
+                        <div class="a1_timer" id="timer">
+                            <p id="demo"></p>
+                        </div>
+                        <div class="a1_bid" id="first">
+                            <div>Current bid: ****</div>
+                            <div><button onclick="change()">Place your Bid</button></div>
+                        </div>
+                        <div id="item" style="display: none;">
+                            <div class="a1_bid">Highest Bid: *****</div>
+                            <div class="user_bid">Place your Bid: <input type="text"></div>
+                            <div><button type="su" class="a1_final">Bid Now</button></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                        <!-- cars section end -->
+            <div class="watch">
+                <div class="head">
+                    <div class="head-a">
+                        <div><img src="../images/watch.png"></div> &ensp;
+                        <div class="head-b">Watches</div>
+                    </div>
+                    <div>
+                        <button>View all</button>
+                    </div>
+                </div>
+                <div class="auction">
+
+                    <div class="a1">
+                        <div><img
+                                src="https://www.thehousedesigners.com/images/plans/01/URD/bulk/6583/the-destination-front-rendering_m.webp">
+                        </div>
+                        <div class="a1_head">Mustang</div>
+                        <div class="a1_description" id="desci">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                            Accusantium, blanditiis.</div>
+                        <div class="a1_timer" id="timer">
+                            <p id="demo2"></p>
+                        </div>
+                        <div class="a1_bid" id="first">
+                            <div>Current bid: ****</div>
+                            <div><button onclick="change()">Place your Bid</button></div>
+                        </div>
+                        <div id="item" style="display: none;">
+                            <div class="a1_bid">Highest Bid: *****</div>
+                            <div class="user_bid">Place your Bid: <input type="text"></div>
+                            <div><button type="su" class="a1_final">Bid Now</button></div>
+                        </div>
+                    </div>
+                    <div class="a1">
+                        <div><img
+                                src="https://www.thehousedesigners.com/images/plans/01/URD/bulk/6583/the-destination-front-rendering_m.webp">
+                        </div>
+                        <div class="a1_head">Mustang</div>
+                        <div class="a1_description" id="desci">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                            Accusantium, blanditiis.</div>
+                        <div class="a1_timer" id="timer">
+                            <p id="demo3"></p>
+                        </div>
+                        <div class="a1_bid" id="first">
+                            <div>Current bid: ****</div>
+                            <div><button onclick="change()">Place your Bid</button></div>
+                        </div>
+                        <div id="item" style="display: none;">
+                            <div class="a1_bid">Highest Bid: *****</div>
+                            <div class="user_bid">Place your Bid: <input type="text"></div>
+                            <div><button type="su" class="a1_final">Bid Now</button></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- watch ends -->
+
+            <div class="estate">
+                <div class="head">
+                    <div class="head-a">
+                        <div><img src="../images/estate.png"></div> &ensp;
+                        <div class="head-b">Real Estate</div>
+                    </div>
+                    <div>
+                        <button>View all</button>
+                    </div>
+                </div>
+                <div class="auction">
+
+                    <div class="a1">
+                        <div><img
+                                src="https://www.thehousedesigners.com/images/plans/01/URD/bulk/6583/the-destination-front-rendering_m.webp">
+                        </div>
+                        <div class="a1_head">Mustang</div>
+                        <div class="a1_description" id="desci">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                            Accusantium, blanditiis.</div>
+                        <div class="a1_timer" id="timer">
+                            <p id="demo4"></p>
+                        </div>
+                        <div class="a1_bid" id="first">
+                            <div>Current bid: ****</div>
+                            <div><button onclick="change()">Place your Bid</button></div>
+                        </div>
+                        <div id="item" style="display: none;">
+                            <div class="a1_bid">Highest Bid: *****</div>
+                            <div class="user_bid">Place your Bid: <input type="text"></div>
+                            <div><button type="su" class="a1_final">Bid Now</button></div>
+                        </div>
+                    </div>
+                    <div class="a1">
+                        <div><img
+                                src="https://www.thehousedesigners.com/images/plans/01/URD/bulk/6583/the-destination-front-rendering_m.webp">
+                        </div>
+                        <div class="a1_head">Mustang</div>
+                        <div class="a1_description" id="desci">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                            Accusantium, blanditiis.</div>
+                        <div class="a1_timer" id="timer">
+                            <p id="demo5"></p>
+                        </div>
+                        <div class="a1_bid" id="first">
+                            <div>Current bid: ****</div>
+                            <div><button onclick="change()">Place your Bid</button></div>
+                        </div>
+                        <div id="item" style="display: none;">
+                            <div class="a1_bid">Highest Bid: *****</div>
+                            <div class="user_bid">Place your Bid: <input type="text"></div>
+                            <div><button type="su" class="a1_final">Bid Now</button></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- estate ends -->
+
+            <div class="art">
+                <div class="head">
+                    <div class="head-a">
+                        <div><img src="../images/art.png"></div> &ensp;
+                        <div class="head-b">Art</div>
+                    </div>
+                    <div>
+                        <button>View all</button>
+                    </div>
+                </div>
+                <div class="auction">
+
+                    <div class="a1">
+                        <div><img
+                                src="https://www.thehousedesigners.com/images/plans/01/URD/bulk/6583/the-destination-front-rendering_m.webp">
+                        </div>
+                        <div class="a1_head">Mustang</div>
+                        <div class="a1_description" id="desci">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                            Accusantium, blanditiis.</div>
+                        <div class="a1_timer" id="timer">
+                            <p id="demo6"></p>
+                        </div>
+                        <div class="a1_bid" id="first">
+                            <div>Current bid: ****</div>
+                            <div><button onclick="change()">Place your Bid</button></div>
+                        </div>
+                        <div id="item" style="display: none;">
+                            <div class="a1_bid">Highest Bid: *****</div>
+                            <div class="user_bid">Place your Bid: <input type="text"></div>
+                            <div><button type="su" class="a1_final">Bid Now</button></div>
+                        </div>
+                    </div>
+                    <div class="a1">
+                        <div><img
+                                src="https://www.thehousedesigners.com/images/plans/01/URD/bulk/6583/the-destination-front-rendering_m.webp">
+                        </div>
+                        <div class="a1_head">Mustang</div>
+                        <div class="a1_description" id="desci">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                            Accusantium, blanditiis.</div>
+                        <div class="a1_timer" id="timer">
+                            <p id="demo7"></p>
+                        </div>
+                        <div class="a1_bid" id="first">
+                            <div>Current bid: ****</div>
+                            <div><button onclick="change()">Place your Bid</button></div>
+                        </div>
+                        <div id="item" style="display: none;">
+                            <div class="a1_bid">Highest Bid: *****</div>
+                            <div class="user_bid">Place your Bid: <input type="text"></div>
+                            <div><button type="su" class="a1_final">Bid Now</button></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- art ends -->
+
+            <div class="upcoming">
+                <div class="head">
+                    <div class="head-a">
+                        <div><img src="../images/upcoming.png"></div> &ensp;
+                        <div class="head-b">Upcoming Bids</div>
+                    </div>
+                    <div>
+                        <button>View all</button>
+                    </div>
+                </div>
+                <div class="auction">
+
+                    <div class="a1 upcom">
+                        <div><img
+                                src="https://www.thehousedesigners.com/images/plans/01/URD/bulk/6583/the-destination-front-rendering_m.webp">
+                        </div>
+                        <div class="a1_head">Mustang</div>
+                        <div class="a1_description" id="desci">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                            Accusantium, blanditiis.</div>
+                    </div>
+                    <div class="a1 upcom">
+                        <div><img
+                                src="https://www.thehousedesigners.com/images/plans/01/URD/bulk/6583/the-destination-front-rendering_m.webp">
+                        </div>
+                        <div class="a1_head">Mustang</div>
+                        <div class="a1_description" id="desci">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                            Accusantium, blanditiis.</div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    </div>
+</body>
+<script>
+    function change() {
+        desci.style.display = "none";
+        timer.style.padding = "10px 0"
+        first.style.display = "none";
+        item.style.display = "block";
+    }
+</script>
+<script src="../styles/timer.js"></script>
+
+</html>

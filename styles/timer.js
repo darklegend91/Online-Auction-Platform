@@ -1,45 +1,46 @@
-var expire=true;
+var countDownDate = new Date("Jan 5, 2030 15:37:25").getTime();
 
-function updateCountdown() {
-const currentDate = new Date();
-const targetDate = new Date("2024-02-12T00:00:00"); // Change this to your target date
+var x = setInterval(function() {
 
-const timeRemaining = targetDate - currentDate;
+  var now = new Date().getTime();
+    
+  var distance = countDownDate - now;
+    
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+   document.getElementById("demo1").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+   document.getElementById("demo2").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+   document.getElementById("demo3").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+   document.getElementById("demo4").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+   document.getElementById("demo5").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+   document.getElementById("demo6").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+   document.getElementById("demo7").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+    
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
 
-if (timeRemaining > 0) {
-    const days = Math.floor(timeRemaining / (24 * 60 * 60 * 1000));
-    const hours = Math.floor((timeRemaining % (24 * 60 * 60 * 1000)) / (60 * 60 * 1000));
-    const minutes = Math.floor((timeRemaining % (60 * 60 * 1000)) / (60 * 1000));
-    const seconds = Math.floor((timeRemaining % (60 * 1000)) / 1000);
 
-    document.getElementById('days').innerHTML = days;
-    document.getElementById('hours').innerHTML = hours;
-    document.getElementById('min').innerHTML = minutes;
-    document.getElementById('sec').innerHTML = seconds;
-} else {
-    document.getElementById('days').innerHTML = "0";
-    document.getElementById('hours').innerHTML = "0";
-    document.getElementById('min').innerHTML = "0";
-    document.getElementById('sec').innerHTML = "0";
-    expire=false;
-    clearInterval(countdownInterval); // clearInterval is used to stop the execution of the Interval set.
+
+
+function openSearch() {
+    document.getElementById("myOverlay").style.display = "block";
 }
-}
 
-const countdownInterval = setInterval(updateCountdown, 1000);
-// setTnterval is used to execute the repeatedly execute a function at a specific interval, in out case, 1000 milliseconds (1 sec)
-
-updateCountdown(); // Initial update
-
-
-function next_page(){
-    if (expire){
-    let a = prompt("Place your Bid");
-    let b = confirm("The Amount entered is " + a + "\nDo you wanna Continue?");
-    if (b){
-        window.location.href="../pages/confirmation.html";
-    }
-    } else {
-        alert("Auction has Ended");
-    }
+function closeSearch() {
+    document.getElementById("myOverlay").style.display = "none";
 }
