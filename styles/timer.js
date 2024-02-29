@@ -1,3 +1,4 @@
+// code for timer
 var countDownDate = new Date("Jan 5, 2030 15:37:25").getTime();
 
 var x = setInterval(function() {
@@ -27,6 +28,16 @@ var x = setInterval(function() {
   + minutes + "m " + seconds + "s ";
    document.getElementById("demo7").innerHTML = days + "d " + hours + "h "
   + minutes + "m " + seconds + "s ";
+   document.getElementById("demo8").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+   document.getElementById("demo9").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+   document.getElementById("demo10").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+   document.getElementById("demo11").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+   document.getElementById("demo12").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
     
   if (distance < 0) {
     clearInterval(x);
@@ -37,6 +48,7 @@ var x = setInterval(function() {
 
 
 
+// code for fullscreen search bar
 function openSearch() {
     document.getElementById("myOverlay").style.display = "block";
 }
