@@ -48,11 +48,3 @@ var x = setInterval(function() {
 
 
 
-// code for fullscreen search bar
-function openSearch() {
-    document.getElementById("myOverlay").style.display = "block";
-}
-
-function closeSearch() {
-    document.getElementById("myOverlay").style.display = "none";
-}
