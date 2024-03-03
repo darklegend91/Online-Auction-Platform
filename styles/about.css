@@ -34,11 +34,13 @@ header {
     /* background-color: yellow; */
     width: 60%;
 }
-
 .nav1 a {
     text-decoration: none;
     color: black;
     transition: 0.3s;
+}
+.home a{
+    color: rgb(219, 55, 101);
 }
 
 .nav1 a:hover {

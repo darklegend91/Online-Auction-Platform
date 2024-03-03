@@ -16,6 +16,7 @@
 // }
 
 
+// js for main page 
 var splide = new Splide('#icons_slide', {
     perPage: 7,
     perMove: 1,
@@ -84,7 +85,6 @@ var splide = new Splide('#reviews', {
 
 splide.mount();
 
-
 // code for fullscreen search bar
 function openSearch() {
     document.getElementById("myOverlay").style.display = "block";
@@ -107,21 +107,18 @@ function myFunction_gsm(sectionId) {
 }
 
 function changeColor(button) {
-    var buttons = document.querySelectorAll('.color-button'); // Select all buttons
-    var originalColor = "rgb(231, 230, 230)"; // Define the original color
+    var buttons = document.querySelectorAll('.color-button'); 
+    var originalColor = "rgb(231, 230, 230)"; 
 
-    // Loop through each button
     buttons.forEach(function (btn) {
-        // If the clicked button matches the current button
         if (btn === button) {
-            btn.style.backgroundColor = 'rgb(255, 222, 194)'; // Change its color
+            btn.style.backgroundColor = 'rgb(255, 222, 194)'; 
         } else {
-            btn.style.backgroundColor = originalColor; // Reset other button colors
+            btn.style.backgroundColor = originalColor; 
         }
     });
 }
 
-// to get the current date and time
 var currentdate = new Date();
 document.getElementById("time").innerHTML = currentdate.getDate() + "/"
     + (currentdate.getMonth() + 1) + "/"

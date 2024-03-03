@@ -62,7 +62,9 @@ header {
     color: black;
     transition: 0.3s;
 }
-
+.home a{
+    color: rgb(219, 55, 101);
+}
 .nav1 a:hover {
     color: rgb(219, 55, 101);
 }
@@ -220,59 +222,68 @@ header {
     }
 }
 
-.icons{
-    margin:100px 90px;
+.icons {
+    margin: 100px 90px;
     /* background-color: green; */
 }
-.box-icons{
+
+.box-icons {
     height: 160px;
     width: 160px;
     /* background-color: yellow; */
-    border-radius: 20px;  
+    border-radius: 20px;
 }
-.box-icons img{
+
+.box-icons img {
     position: absolute;
     /* align-items: center; */
     /* left: 0; */
 }
-.icon1{
+
+.icon1 {
     background-image: url('https://bidout-wp.b-cdn.net/wp-content/uploads/2022/10/cars.png');
     background-size: cover;
     /* filter: blur(2px); */
     /* backdrop-filter: blur(5px); */
     background-repeat: no-repeat;
 }
-.icon2{
+
+.icon2 {
     background-image: url('https://bidout-wp.b-cdn.net/wp-content/uploads/2022/10/accessories.png');
     background-size: cover;
     /* filter: blur(2px); */
     background-repeat: no-repeat;
 }
-.icon3{
+
+.icon3 {
     background-image: url('https://bidout-wp.b-cdn.net/wp-content/uploads/2022/10/fashion.png');
     background-size: cover;
     /* filter: blur(2px); */
     background-repeat: no-repeat;
 }
-.icon4{
+
+.icon4 {
     background-image: url('https://bidout-wp.b-cdn.net/wp-content/uploads/2022/10/music.png');
     background-size: cover;
     /* filter: blur(2px); */
     background-repeat: no-repeat;
 }
-.icon5{
+
+.icon5 {
     background-image: url('https://bidout-wp.b-cdn.net/wp-content/uploads/2022/10/Category-Image-06-2.png');
     background-size: cover;
     /* filter: blur(2px); */
     background-repeat: no-repeat;
 }
-.icon6{
+
+.icon6 {
     background-image: url('https://bidout-wp.b-cdn.net/wp-content/uploads/2022/10/Category-Image-06-1.png');
     background-size: cover;
     /* filter: blur(2px); */
     background-repeat: no-repeat;
 }
-.icon7{
+
+.icon7 {
     background-image: url('https://bidout-wp.b-cdn.net/wp-content/uploads/2022/10/accessories.png');
     background-size: cover;
     /* filter: blur(2px); */
@@ -318,17 +329,21 @@ header {
     width: 60%;
 } */
 
-.imgBox { 
-    display: inline-block; 
-    overflow: hidden; 
-  }
-  .imgBox img {
+.imgBox {
+    display: inline-block;
+    overflow: hidden;
+}
+
+.imgBox img {
     display: block;
     transition: .5s ease-in-out;
-  }
-  .a1:hover img, .imgBox:hover img {
+}
+
+.a1:hover img,
+.imgBox:hover img {
     transform: scale(1.15);
-  }
+}
+
 .art {
     padding: 10px 0 30px 0;
     margin: 0 80px;
@@ -350,7 +365,8 @@ header {
     font-weight: 600;
 }
 
-.head button {
+.head button,
+.categories_main button {
     padding: 10px 45px;
     border-radius: 20px;
     background-color: rgb(219, 55, 101);
@@ -397,11 +413,13 @@ header {
     padding-left: 30px;
     font-size: 20px;
 }
-.a1_description{
+
+.a1_description {
     padding-left: 30px;
     color: rgb(113, 113, 113);
     font-size: 15px;
 }
+
 /* .a1_timer {
     display: flex;
     flex-direction: row;
@@ -437,28 +455,34 @@ header {
 }
 
 
-.reviews_box{
-    background-image:url("../images/background_images/reviews1.png"),url("../images/background_images/reviews.png");
+.reviews_box {
+    background-image: url("../images/background_images/reviews1.png"), url("../images/background_images/reviews.png");
     background-size: cover, auto;
-    background-repeat: no-repeat,repeat;
+    background-repeat: no-repeat, repeat;
     /* background-color: yellow; */
     height: 600px;
     padding: 50px 0;
 }
-.review-box2{
+
+.review-box2 {
     padding: 50px 80px;
     margin: 20px 20px;
 }
-.main-review, .trust_head{
+
+.main-review,
+.trust_head {
     text-align: center;
     font-size: 40px;
     font-weight: 600;
 }
-.explain-review, .trust_explain{
+
+.explain-review,
+.trust_explain {
     text-align: center;
     color: rgb(79, 79, 79);
 }
-.splide-review{
+
+.splide-review {
     padding: 20px 20px;
     /* height: 100px; */
     /* margin-bottom: 50px; */
@@ -468,26 +492,32 @@ header {
     border-radius: 10px;
     box-shadow: 2px 2px 10px #b9b9b9;
 }
-.profile img{
+
+.profile img {
     height: 60px;
     border-radius: 50%;
 }
-.review_head{
+
+.review_head {
     display: flex;
     justify-content: space-between;
 }
-.review-name{
+
+.review-name {
     font-size: 20px;
     font-weight: bold;
 }
-.review-designation{
+
+.review-designation {
     font-size: 17px;
     color: rgb(109, 109, 109);
 }
-.actual-review{
+
+.actual-review {
     font-size: 18px;
     color: rgb(68, 68, 68);
 }
+
 /* @media screen and (min-width: 640px){
     .slider__wrapper .splide{
         padding: 0 40rem;
@@ -499,55 +529,78 @@ header {
 .register_button:hover {
     background-color: rgb(157, 214, 157);
 }
-.categories_head{
+
+.categories_main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.categories_main button {
+    margin-right: 50px;
+    margin-top: 30px;
+}
+
+.categories_head {
     margin: 0 80px;
 }
-    /* font-size: 35px; */
-    /* font-weight: bold; */
-.categories{
+
+/* font-size: 35px; */
+/* font-weight: bold; */
+.categories {
     padding: 50px 15px;
     margin: 0 auto;
 }
-.splide-box{
-    height: 70vh;
+
+.splide-box {
+    height: 80vh;
     width: 100%;
-    background-size: contain;
+    /* background-size: contain; */
     /* object-fit: fill; */
     /* background-size: cover; */
     background-repeat: no-repeat;
-
 }
-.splide__arrow{
+
+.splide-box img {
+    height: 80vh;
+    width: 100%;
+}
+
+.splide__arrow {
     opacity: 1;
     width: 2.5rem;
     height: 2.5rem;
     background-color: rgb(219, 55, 101);
 }
 
-.trusted{
+.trusted {
     margin: 50px 0;
     padding: 80px 50px;
     background-color: #ffd8df;
 }
-.trust_company{
+
+.trust_company {
     display: flex;
     justify-content: space-evenly;
     padding-top: 50px;
 }
-.trust_company1{
+
+.trust_company1 {
     height: 80px;
     width: 170px;
     /* background-color: yellow; */
 }
-.trust_company1 img{
+
+.trust_company1 img {
     height: 80px;
     width: 170px;
 }
-.service{
+
+.service {
     display: flex;
     justify-content: space-evenly;
     margin: 30px 80px;
 }
+
 /* .service1{
     height: 120px;
     width: 310px;

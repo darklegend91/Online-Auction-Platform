@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="images/icons/favicon.ico" type="image/x-icon">
-    <title>OnlineAuction - The Best Online Auction Website for 2023</title>
-    <link rel="stylesheet" href="styles/1_project.css">
+    <title>Bid Out - The Best Online Auction Website for 2024</title>
+    <link rel="stylesheet" href="styles/index.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet"
@@ -29,9 +29,9 @@
                     <img src="images/images/logo.png" alt="">
                 </div>
                 <div class="nav1">
-                    <div><a href="index.html">Home</a></div>
+                    <div class="home"><a href="index.html">Home</a></div>
                     <div><a href="pages/about.html">About us</a></div>
-                    <div><a href="#">Browse product</a></div>
+                    <div><a href="pages/product.html">Browse product</a></div>
                     <div><a href="#">Gallery</a></div>
                     <div><a href="#">Blog</a></div>
                     <div><a href="pages/contact.html">Contact</a></div>
@@ -77,37 +77,37 @@
             <div class="splide__track">
                 <div class="splide__list">
                     <div class="splide__slide">
-                        <div class="box-icons icon1">
+                        <div class="box-icons icon1 imgBox">
                             <img src="images/icons/icon1.png">
                         </div>
                     </div>
                     <div class="splide__slide">
-                        <div class="box-icons icon2">
+                        <div class="box-icons icon2 imgBox">
                             <img src="images/icons/icon2.png">
                         </div>
                     </div>
                     <div class="splide__slide">
-                        <div class="box-icons icon3">
+                        <div class="box-icons icon3 imgBox">
                             <img src="images/icons/icon3.png">
                         </div>
                     </div>
                     <div class="splide__slide">
-                        <div class="box-icons icon4">
+                        <div class="box-icons icon4 imgBox">
                             <img src="images/icons/icon4.png">
                         </div>
                     </div>
                     <div class="splide__slide">
-                        <div class="box-icons icon5">
+                        <div class="box-icons icon5 imgBox">
                             <img src="images/icons/icon5.png">
                         </div>
                     </div>
                     <div class="splide__slide">
-                        <div class="box-icons icon6">
+                        <div class="box-icons icon6 imgBox">
                             <img src="images/icons/icon6.png">
                         </div>
                     </div>
                     <div class="splide__slide">
-                        <div class="box-icons icon7">
+                        <div class="box-icons icon7 imgBox">
                             <img src="images/icons/icon7.png">
                         </div>
                     </div>
@@ -192,8 +192,7 @@
                     </div>
                 </div>
                 <div class="a1">
-                    <div class="imgBox"><img
-                            src="https://bidout-wp.b-cdn.net/wp-content/uploads/2022/10/Image-6.jpg">
+                    <div class="imgBox"><img src="https://bidout-wp.b-cdn.net/wp-content/uploads/2022/10/Image-6.jpg">
                     </div>
                     <div class="a1_head">Toyota AIGID A Class Car</div>
                     <div class="a1_description">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -275,11 +274,15 @@
                 </div>
             </div>
         </div>
-
-        <div class="categories_head">
-            <div style="font-size: 35px; font-weight: bold;">Categories</div>
-            <div>Explore on the world's best & largest Bidding marketplace with our beautiful Bidding</div>
-            <div>products. We want to be a part of your smile, success and future growth.
+        <div class="categories_main">
+            <div class="categories_head">
+                <div style="font-size: 35px; font-weight: bold;">Categories</div>
+                <div>Explore on the world's best & largest Bidding marketplace with our beautiful Bidding</div>
+                <div>products. We want to be a part of your smile, success and future growth.
+                </div>
+            </div>
+            <div>
+                <button>View all</button>
             </div>
         </div>
         <div class="categories">
@@ -287,23 +290,24 @@
                 <div class="splide__track">
                     <div class="splide__list">
                         <div class="splide__slide">
-                            <div class="splide-box"
-                                style="background-image: url(https://i.pinimg.com/originals/75/0b/8b/750b8b3dd7eff22076098bf444bbea1f.png);">
+                            <div class="splide-box">
+                                <img src="images/images/car_categories.png">
                             </div>
                         </div>
                         <div class="splide__slide">
-                            <div class="splide-box"
-                                style="background-image: url(https://i.ytimg.com/vi/UsvzAPiWEHg/maxresdefault.jpg);">
+                            <div class="splide-box">
+                                <img src="https://i.ytimg.com/vi/UsvzAPiWEHg/maxresdefault.jpg">
                             </div>
                         </div>
                         <div class="splide__slide">
-                            <div class="splide-box"
-                                style="background-image: url(https://www.shutterstock.com/image-vector/electronics-text-assorted-devices-floating-260nw-2271252449.jpg);">
+                            <div class="splide-box">
+                                <img
+                                    src="https://www.shutterstock.com/image-vector/electronics-text-assorted-devices-floating-260nw-2271252449.jpg">
                             </div>
                         </div>
                         <div class="splide__slide">
-                            <div class="splide-box"
-                                style="background-image: url(https://i.ytimg.com/vi/LLV4lxAfp3g/maxresdefault.jpg)">
+                            <div class="splide-box">
+                                <img src="images/images/real estate.png">
                             </div>
                         </div>
                     </div>
@@ -313,23 +317,44 @@
 
         <div class="trusted">
             <div class="trust_head">Trusted By 500+ Businesses</div>
-            <div class="trust_explain">Explore on the world's best & largest Bidding marketplace with our beautiful Bidding </div>
+            <div class="trust_explain">Explore on the world's best & largest Bidding marketplace with our beautiful
+                Bidding </div>
             <div class="trust_explain">products. We want to be a part of your smile, success and future growth.</div>
             <div class="trust_company">
-                <div class="trust_company1 imgBox"><img src="https://img.squadhelp.com/story_images/visual_images/1593290883-nocko%20image1.jpg?class=listing"></div>
-                <div class="trust_company1 imgBox"><img src="https://img.squadhelp.com/story_images/visual_images/1602321598-WiseFinch2-100.jpg?class=listing"></div>
-                <div class="trust_company1 imgBox"><img src="https://img.squadhelp.com/story_images/visual_images/1657345504-simanta-100.jpg?class=listing"></div>
-                <div class="trust_company1 imgBox"><img src="https://img.squadhelp.com/story_images/visual_images/13287589.jpg?class=listing"></div>
-                <div class="trust_company1 imgBox"><img src="https://cdn.logojoy.com/wp-content/uploads/2018/05/30162605/1236.png"></div>
-                <div class="trust_company1 imgBox"><img src="https://img.squadhelp.com/story_images/visual_images/11007772.jpg?class=listing"></div>
+                <div class="trust_company1 imgBox"><img
+                        src="https://img.squadhelp.com/story_images/visual_images/1593290883-nocko%20image1.jpg?class=listing">
+                </div>
+                <div class="trust_company1 imgBox"><img
+                        src="https://img.squadhelp.com/story_images/visual_images/1602321598-WiseFinch2-100.jpg?class=listing">
+                </div>
+                <div class="trust_company1 imgBox"><img
+                        src="https://img.squadhelp.com/story_images/visual_images/1657345504-simanta-100.jpg?class=listing">
+                </div>
+                <div class="trust_company1 imgBox"><img
+                        src="https://img.squadhelp.com/story_images/visual_images/13287589.jpg?class=listing"></div>
+                <div class="trust_company1 imgBox"><img
+                        src="https://cdn.logojoy.com/wp-content/uploads/2018/05/30162605/1236.png"></div>
+                <div class="trust_company1 imgBox"><img
+                        src="https://img.squadhelp.com/story_images/visual_images/11007772.jpg?class=listing"></div>
             </div>
             <div class="trust_company">
-                <div class="trust_company1 imgBox"><img src="https://img.squadhelp.com/story_images/visual_images/1599554979-codegreat.png?class=listing"></div>
-                <div class="trust_company1 imgBox"><img src="https://img.squadhelp.com/story_images/visual_images/1661580450-lozi.png?class=listing"></div>
-                <div class="trust_company1 imgBox"><img src="https://img.squadhelp.com/story_images/visual_images/Gadus.png?class=listing"></div>
-                <div class="trust_company1 imgBox"><img src="https://img.squadhelp.com/story_images/visual_images/1704746614-onevu%201-01.jpg?class=listing"></div>
-                <div class="trust_company1 imgBox"><img src="https://img.squadhelp.com/story_images/visual_images/1700576711-ChirpIQ%20image1.jpg?class=listing"></div>
-                <div class="trust_company1 imgBox"><img src="https://img.squadhelp.com/story_images/visual_images/1674731173-SmartBoat_main.png?class=listing"></div>
+                <div class="trust_company1 imgBox"><img
+                        src="https://img.squadhelp.com/story_images/visual_images/1599554979-codegreat.png?class=listing">
+                </div>
+                <div class="trust_company1 imgBox"><img
+                        src="https://img.squadhelp.com/story_images/visual_images/1661580450-lozi.png?class=listing">
+                </div>
+                <div class="trust_company1 imgBox"><img
+                        src="https://img.squadhelp.com/story_images/visual_images/Gadus.png?class=listing"></div>
+                <div class="trust_company1 imgBox"><img
+                        src="https://img.squadhelp.com/story_images/visual_images/1704746614-onevu%201-01.jpg?class=listing">
+                </div>
+                <div class="trust_company1 imgBox"><img
+                        src="https://img.squadhelp.com/story_images/visual_images/1700576711-ChirpIQ%20image1.jpg?class=listing">
+                </div>
+                <div class="trust_company1 imgBox"><img
+                        src="https://img.squadhelp.com/story_images/visual_images/1674731173-SmartBoat_main.png?class=listing">
+                </div>
             </div>
         </div>
 
@@ -397,4 +422,5 @@
 </body>
 <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
 <script src="styles/script.js"></script>
+
 </html>

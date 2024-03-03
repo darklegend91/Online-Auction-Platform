@@ -10,11 +10,11 @@
 }
 
 header {
-    position: fixed;
+    /* position: fixed; */
     overflow: hidden;
     height: 100px;
     width: 100%;
-    background-color: #F3F6FD;
+    background-color: white;
     top: 0;
 }
 
@@ -36,7 +36,9 @@ header {
     color: black;
     transition: 0.3s;
 }
-
+.home a{
+    color: rgb(219, 55, 101);
+}
 .nav1 a:hover {
     color: rgb(219, 55, 101);
 }
@@ -48,7 +50,8 @@ header {
     justify-content: space-evenly;
 }
 
-.nav1, .nav2 {
+.nav1,
+.nav2 {
     padding: 30px 0;
     font-size: 20px;
 }
@@ -119,7 +122,9 @@ header {
 .overlay button:hover {
     background: #bbb;
 }
-
+footer {
+    font-family: inconsolata;
+}
 /* end */
 /* 
 .fix {
@@ -133,40 +138,86 @@ header {
 .fix div {
     padding-left: 10px;
 } */
+.banner img {
+    width: 100%;
+}
+.highlight{
+    margin-left: 120px;
+    font-size: 25px;
+    padding-top: 20px;
+}
+.browse-box {
+    padding: 0 150px;
+    padding-bottom: 20px;
+    /* padding: 0 20px; */
+}
 
-.car{
-    background-image: url('images/bg-car.png');
+.browse1{
+    background-color: white;
+    padding: 30px 25px;
+    margin: 20px 5px;
+    border-radius: 20px;
+    /* height: 150px; */
+    cursor: pointer;
+    box-shadow: 2px 2px 10px #888888;
 }
-.art{
-    background-image: url('images/bg-art.png');
+.browse1 a{
+    text-decoration: none;
+    color: black;
+}
+.browse1 img{
+    height: 85px;
+}
+.browse1b{
+    font-size: 20px;
+}
+.browse1 a:hover{
+    color: rgb(219, 55, 101);
+}
+.car {
+    background-image: url('../images/background_images/bg-car.png');
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+}
+
+.art {
+    background-image: url('../images/background_images/bg-art.png');
     background-size: contain;
 }
-.watch{
-    background-image: url('images/bg-watch.png');
+
+.watch {
+    background-image: url('../images/background_images/bg-watch.png');
     background-size: contain;
 }
-.estate{
-    background-image: url('images/bg-estate.png');
+
+.estate {
+    background-image: url('../images/background_images/bg-estate.png');
     background-size: contain;
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat; */
 }
-.car, .watch, .estate, .art, .upcoming{
+
+.car,
+.watch,
+.estate,
+.art,
+.upcoming {
     /* background-color: yellow; */
     padding: 10px 0 30px 0;
     margin-bottom: 50px;
 }
+
 .scroll {
     /* position: absolute; */
     /* width: 75%; */
     /* height: 100px; */
     /* padding-top: 10px; */
-    background-color: #F3F6FD;
     /* margin-left: 18%; */
     padding: 1rem 3.2rem;
 }
 
 .main {
-    margin-top: 100px;
+    background-color: #F3F6FD;
+    /* margin-top: 100px; */
 }
 
 .head {
@@ -183,16 +234,37 @@ header {
     font-weight: bold;
 }
 
+.head-bi {
+    color: #888888;
+}
+
 .head button {
     padding: 11px 30px;
     border-radius: 20px;
     font-size: 20px;
-    background-color: #F3F6FD;
-    border: 1px solid rgb(175, 174, 174);
-}
-.head button:hover{
-    background-image: linear-gradient(180deg,rgb(219, 55, 101), rgb(255, 196, 213));
+    background-color: rgb(219, 55, 101);
     color: white;
+    border: none;
+    /* border: 1px solid rgb(175, 174, 174); */
+}
+
+/* .head button:hover{ */
+/* background-image: linear-gradient(180deg,rgb(219, 55, 101), rgb(255, 196, 213)); */
+/* color: white; */
+/* } */
+.imgBox {
+    /* display: inline-block; */
+    overflow: hidden;
+}
+
+.imgBox img {
+    /* display: block; */
+    transition: .5s ease-in-out;
+}
+
+.a1:hover img,
+.imgBox:hover img {
+    transform: scale(1.15);
 }
 
 .auction {
@@ -201,6 +273,7 @@ header {
     /* flex-direction: row; */
     justify-content: space-around;
 }
+
 .a1 {
     /* height: 550px; */
     /* color: rgb(219, 55, 101); */
@@ -208,23 +281,33 @@ header {
     border-radius: 20px;
     padding: 5px 5px;
     text-align: center;
-    height: 450px;
+    /* height: 550px; */
     /* font-size: 27px; */
     width: 30%;
     box-shadow: 5px 10px 18px #888888;
 }
-.a1 img{
+
+.a1 img {
+    height: 350px;
     width: 100%;
-    height: auto;
+    /* height: auto; */
     border-radius: 20px;
 }
-.a1_head {
-    text-align: left;
-    font-weight: 500;
-    padding-left: 30px;
-    font-size: 30px;
+
+.a1_description {
+    color: #888888;
+    font-size: 15px;
 }
-.a1_timer{
+
+.a1_head {
+    /* text-align: left; */
+    font-weight: 500;
+    /* padding-left: 30px; */
+    font-size: 22px;
+    text-align: center;
+}
+
+.a1_timer {
     display: flex;
     /* flex-direction: row; */
     justify-content: center;
@@ -233,24 +316,29 @@ header {
     font-size: 20px;
     padding-top: 30px;
 }
-.timer{
+
+.timer {
     padding-left: 5px;
 }
-.a1_bid{
+
+.a1_bid {
     font-size: 20px;
     display: flex;
     justify-content: space-evenly;
     padding-top: 5px;
+    margin-bottom: 20px;
 }
-.a1_bid button{
+
+.a1_bid button {
     padding: 10px 20px;
     border-radius: 20px;
     font-size: 15px;
-    border:none;
-    background-image: linear-gradient(180deg,rgb(219, 55, 101), rgb(255, 196, 213));
+    border: none;
+    background-image: linear-gradient(180deg, rgb(219, 55, 101), rgb(255, 196, 213));
     color: white;
     cursor: pointer;
 }
+
 /* .user_bid{
     font-size: 20px;
     padding: 5px 0;
@@ -261,7 +349,76 @@ header {
     padding: 5px 5px;
     border-radius: 10px;
 } */
-.upcom{
+.upcom {
     /* filter: blur(3px); */
     height: 400px;
+}
+
+.upcom img {
+    height: 300px;
+}
+.footer1 {
+    background-color: rgb(49, 50, 54);
+    color: white;
+    display: flex;
+    justify-content: space-around;
+}
+
+.foot1,
+.foot2 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#email {
+    border-radius: 20px;
+    width: 200px;
+    height: 32px;
+    padding-left: 5px;
+}
+
+.submit {
+    background-color: rgb(219, 55, 101);
+    padding: 5px 5px 5px 5px;
+    width: 80px;
+    border-radius: 50px;
+    color: white;
+    border: none;
+}
+
+.footer2 {
+    background-color: rgb(49, 50, 54);
+    color: white;
+}
+
+.foot3 {
+    padding-left: 20px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+.foot3 li {
+    display: inline;
+    margin-right: 20px;
+    padding-left: 20px;
+}
+
+.foot3 a {
+    text-decoration: none;
+    color: white;
+}
+
+#copy {
+    padding-left: 335px;
+}
+
+.fa-facebook,
+.fa-instagram,
+.fa-twitter,
+.fa-linkedin,
+.fa-github {
+    padding: 8px 8px;
+    text-decoration: none;
+    color: white;
+    height: 20px;
 }
