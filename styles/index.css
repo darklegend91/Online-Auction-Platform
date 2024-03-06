@@ -365,8 +365,9 @@ header {
     font-weight: 600;
 }
 
-.head button,
-.categories_main button {
+.head button
+/* .categories_main button*/
+{
     padding: 10px 45px;
     border-radius: 20px;
     background-color: rgb(219, 55, 101);
@@ -529,7 +530,7 @@ header {
 .register_button:hover {
     background-color: rgb(157, 214, 157);
 }
-
+/* 
 .categories_main {
     display: flex;
     justify-content: space-between;
@@ -542,11 +543,11 @@ header {
 
 .categories_head {
     margin: 0 80px;
-}
+} */
 
 /* font-size: 35px; */
 /* font-weight: bold; */
-.categories {
+/* .categories {
     padding: 50px 15px;
     margin: 0 auto;
 }
@@ -556,7 +557,7 @@ header {
     width: 100%;
     /* background-size: contain; */
     /* object-fit: fill; */
-    /* background-size: cover; */
+    /* background-size: cover; 
     background-repeat: no-repeat;
 }
 
@@ -571,9 +572,10 @@ header {
     height: 2.5rem;
     background-color: rgb(219, 55, 101);
 }
-
+ */
 .trusted {
-    margin: 50px 0;
+    /* margin: 50px 0; */
+    margin-bottom: 50px;
     padding: 80px 50px;
     background-color: #ffd8df;
 }
