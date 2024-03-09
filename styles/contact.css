@@ -6,10 +6,129 @@
     padding: 0;
     box-sizing: border-box;
 }
-.nav{
+/* .nav{
     height: 100px;
     background-color: yellow;
+} */
+.poppins-light {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
 }
+
+header {
+    /* position: fixed; */
+    overflow: hidden;
+    height: 100px;
+    width: 100%;
+    /* background-color: #F3F6FD; */
+    top: 0;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav1 {
+    display: flex;
+    justify-content: space-between;
+    /* background-color: yellow; */
+    width: 60%;
+}
+.nav1 a {
+    text-decoration: none;
+    color: black;
+    transition: 0.3s;
+}
+.home a{
+    color: rgb(219, 55, 101);
+}
+
+.nav1 a:hover {
+    color: rgb(219, 55, 101);
+}
+
+.nav2 {
+    /* background-color: cyan; */
+    width: 10%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav1,
+.nav2 {
+    padding: 30px 0;
+    font-size: 20px;
+}
+
+.search {
+    color: rgb(219, 55, 101);
+    cursor: pointer;
+}
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.overlay-content {
+    position: relative;
+    /* display: flex; */
+    top: 46%;
+    width: 80%;
+    text-align: center;
+    margin-top: 30px;
+    margin: auto;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+    cursor: pointer;
+    color: white;
+}
+
+.overlay .closebtn:hover {
+    color: #ccc;
+}
+
+.overlay input[type=text] {
+    padding: 15px;
+    font-size: 17px;
+    border: none;
+    float: left;
+    width: 80%;
+    background: white;
+}
+
+.overlay input[type=text]:hover {
+    background: #f1f1f1;
+}
+
+.overlay button {
+    float: left;
+    width: 20%;
+    padding: 15px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+
+.overlay button:hover {
+    background: #bbb;
+}
+
 .imagee img{
     height: auto;
     width: 100%;

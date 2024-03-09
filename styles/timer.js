@@ -1,5 +1,5 @@
 // code for timer
-var countDownDate = new Date("Jan 5, 2030 15:37:25").getTime();
+var countDownDate = new Date("Dec 31, 2024 00:00:00").getTime();
 
 var x = setInterval(function() {
 
@@ -36,12 +36,21 @@ var x = setInterval(function() {
   + minutes + "m " + seconds + "s ";
    document.getElementById("demo11").innerHTML = days + "d " + hours + "h "
   + minutes + "m " + seconds + "s ";
-   document.getElementById("demo12").innerHTML = days + "d " + hours + "h "
-  + minutes + "m " + seconds + "s ";
     
   if (distance < 0) {
     clearInterval(x);
     document.getElementById("demo").innerHTML = "EXPIRED";
+    document.getElementById("demo1").innerHTML = "EXPIRED";
+    document.getElementById("demo2").innerHTML = "EXPIRED";
+    document.getElementById("demo3").innerHTML = "EXPIRED";
+    document.getElementById("demo4").innerHTML = "EXPIRED";
+    document.getElementById("demo5").innerHTML = "EXPIRED";
+    document.getElementById("demo6").innerHTML = "EXPIRED";
+    document.getElementById("demo7").innerHTML = "EXPIRED";
+    document.getElementById("demo8").innerHTML = "EXPIRED";
+    document.getElementById("demo9").innerHTML = "EXPIRED";
+    document.getElementById("demo10").innerHTML = "EXPIRED";
+    document.getElementById("demo11").innerHTML = "EXPIRED";
   }
 }, 1000);
 
